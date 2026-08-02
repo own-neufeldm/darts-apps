@@ -1,0 +1,6 @@
+= darts-tracker
+:toc: auto
+
+== About
+
+Desktop App for keeping track of your Darts score.

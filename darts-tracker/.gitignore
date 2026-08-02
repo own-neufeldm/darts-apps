@@ -1,0 +1,12 @@
+# editor
+.config
+.vscode
+.editorconfig
+notes.yml
+
+# sprites
+*.aseprite
+
+# csharp
+bin
+obj
