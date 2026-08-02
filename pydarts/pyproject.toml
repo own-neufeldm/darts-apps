@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools_scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydarts"
+description = "This is a Python app for tracking the score of a Darts game."
+readme = "README.md"
+authors = [{ name = "Martin Neufeld" }]
+dynamic = ["version"]
+requires-python = ">=3.11"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = ["pyinstaller==6.5.0", "PySide6==6.6.2"]
+
+[project.scripts]
+pydarts = "pydarts.main:main"
+
+[tool.setuptools]
+py-modules = ["pydarts"]
+
+[tool.setuptools_scm]
+# can be empty if no extra settings are needed, presence enables setuptools_scm
